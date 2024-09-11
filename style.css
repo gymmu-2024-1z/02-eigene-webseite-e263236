@@ -30,3 +30,7 @@ body {
     border-radius: 2rem; /* Damit können die Ecken abgerundet werden. */
     width: 100%; /* Braucht es damit das Bild im Container bleibt und nicht viel zu gross ist. */
 }
+
+li {
+    list-style-type: none;
+}
