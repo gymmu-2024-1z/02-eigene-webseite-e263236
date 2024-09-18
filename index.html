@@ -19,7 +19,7 @@
             <h1>Webseite von Sophie Kienhöfer</h1>
         </header>
 
-        <nav>
+        <nav class="grid">
             <!-- Das Navigations-Element beinhaltet eine Liste von Links, mit
             denen man auf Unterwebseiten kommt. 
             Dieses Element wird oft in den Header gesetzt, kann aber auch auf
@@ -34,6 +34,25 @@
                     <a href="./pages/books.html">Books</a>
                 </li>
             </ul>
+            <svg height="300" width="300" version="1.1">
+                <path
+                    id="circle-motion"
+                    d="M 70 150 L 230 150 Z"
+                    stroke="white"
+                />
+
+                <circle r="70" fill="hotpink">
+                    <animateMotion dur="5s" repeatCount="indefinite">
+                        <mpath xlink:href="#circle-motion" />
+                    </animateMotion>
+                </circle>
+
+                <circle r="40" fill="pink">
+                    <animateMotion dur="7s" repeatCount="indefinite">
+                        <mpath xlink:href="#circle-motion" />
+                    </animateMotion>
+                </circle>
+            </svg>
         </nav>
 
         <main>
@@ -50,9 +69,11 @@
                     <!-- Mit dem p-Element Teilt man einen Text in Paragraphen
                     ein. Das p-Element hat meistens nur noch Text, Links oder
                     Bilder drin, sonst keine weiteren Elemente. -->
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-                    itaque eaque vel necessitatibus amet consectetur corrupti
-                    repudiandae ipsam aliquam sint.
+                    Mein Name ist Sophie Kienhöfer und ich gehe in die 10 Klasse
+                    am Gymnasium Muttenz. Hier habe ich den Schwepunkt BG
+                    gewählt und mein Lieblingsfach ist auch Bg sowie Geschichte.
+                    Meine Lieblingsfarbe ist pink aber eigentlich mag ich alle
+                    Farben sehr.
                 </p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed

@@ -38,3 +38,13 @@ li {
 .small-img {
     width: 200px;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid > svg {
+}
