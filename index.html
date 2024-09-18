@@ -16,10 +16,10 @@
             <!-- Im header wird der Kopf der Webseite angegeben.
             Dies ist aber nur ein Struktur-Element. Damit der Header auch immer
             ganz oben angezeigt wird, braucht es noch das richtige CSS dafür. -->
-            <h1>Webseite von ...</h1>
+            <h1>Webseite von Sophie Kienhöfer</h1>
         </header>
 
-        <nav>
+        <nav class="grid">
             <!-- Das Navigations-Element beinhaltet eine Liste von Links, mit
             denen man auf Unterwebseiten kommt. 
             Dieses Element wird oft in den Header gesetzt, kann aber auch auf
@@ -29,7 +29,52 @@
                 <li>
                     <a href="./pages/hobbies.html">Hobbies</a>
                 </li>
+
+                <li>
+                    <a href="./pages/books.html">Books</a>
+                </li>
             </ul>
+            <svg height="300" width="300" version="1.1">
+                <path
+                    id="circle-motion"
+                    d="M 70 150 L 230 150 Z"
+                    stroke="white"
+                />
+
+                <circle r="70" fill="lightblue">
+                    <animateMotion dur="5s" repeatCount="indefinite">
+                        <mpath xlink:href="#circle-motion" />
+                    </animateMotion>
+                </circle>
+
+                <image
+                    transform="translate(-50 -50)"
+                    height="100"
+                    width="100"
+                    href="https://images.artfulcloud.com/107553_5144998xl.jpg?sold=Sold&hdots=False&v=202305011524&cv=20230103091437.png"
+                >
+                    <animateMotion dur="5s" repeatCount="indefinite">
+                        <mpath xlink:href="#circle-motion" />
+                    </animateMotion>
+                </image>
+
+                <circle r="20" fill="darkblue">
+                    <animateMotion dur="9s" repeatCount="indefinite">
+                        <mpath xlink:href="#circle-motion" />
+                    </animateMotion>
+                </circle>
+
+                <circle
+                    r="30"
+                    fill="transparent"
+                    stroke="darkblue"
+                    stroke-width="5"
+                >
+                    <animateMotion dur="9s" repeatCount="indefinite">
+                        <mpath xlink:href="#circle-motion" />
+                    </animateMotion>
+                </circle>
+            </svg>
         </nav>
 
         <main>
@@ -46,9 +91,11 @@
                     <!-- Mit dem p-Element Teilt man einen Text in Paragraphen
                     ein. Das p-Element hat meistens nur noch Text, Links oder
                     Bilder drin, sonst keine weiteren Elemente. -->
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-                    itaque eaque vel necessitatibus amet consectetur corrupti
-                    repudiandae ipsam aliquam sint.
+                    Mein Name ist Sophie Kienhöfer und ich gehe in die 10 Klasse
+                    am Gymnasium Muttenz. Hier habe ich den Schwepunkt BG
+                    gewählt und mein Lieblingsfach ist auch Bg sowie Geschichte.
+                    Meine Lieblingsfarbe ist pink aber eigentlich mag ich alle
+                    Farben sehr.
                 </p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
@@ -73,7 +120,10 @@
                         Text der dazu passen könnte.
                     </div>
                     <div class="image">
-                        <img src="/img/mountains.png" alt="" />
+                        <img
+                            src="https://images.artfulcloud.com/107553_5144998xl.jpg?sold=Sold&hdots=False&v=202305011524&cv=20230103091437.png"
+                            alt=""
+                        />
                     </div>
                 </div>
             </section>
